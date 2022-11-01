@@ -1,6 +1,6 @@
 import './App.css';
 import Homepage from "./components/Homepage"
-import Questions from "./componets/Questions"
+import Questions from "./components/Questions"
 
 function App() {
   return (
