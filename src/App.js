@@ -10,7 +10,7 @@ function App() {
 
 
   useEffect(() => {
-    fetch("https://opentdb.com/api.php?amount=10")
+    fetch("https://opentdb.com/api.php?amount=5&encode=url3986")
     .then(res => res.json())
     .then(data => setQuiz(data.results))
   }, [])
@@ -34,7 +34,9 @@ function App() {
   return (
     <div className="App">
       {!start && <Homepage startButton={showQuestions}/>}
-      {start && questions}
+      <div id="questionList">
+        {start && questions}
+      </div>  
     </div>
   );
 }
