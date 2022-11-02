@@ -81,3 +81,41 @@
   transform: rotate(5deg);
   color: #FFDBE9;
 }
+
+#questionList {
+  height: 100vh;
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 75px;
+  padding-left: 150px;
+}
+
+.question--container {
+  margin-bottom: 20px;
+}
+
+
+.question {
+  text-align: left;
+  font-weight: 700;
+  color: #293264;
+  margin-bottom: 7px;
+}
+
+.choices {
+  display: flex;
+  gap: 30px;
+  width: 100%;
+}
+
+.choice {
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  border: 1px solid #4D5B9E;
+  border-radius: 8px;
+  padding: 7px 20px;
+  color: #293264;
+  cursor: pointer;
+}
