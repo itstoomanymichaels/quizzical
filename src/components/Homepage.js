@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faQuestion } from "@fortawesome/free-solid-svg-icons"
 
-export default function Homepage() {
+export default function Homepage(props) {
     return (
         <div id="home--container">
             <FontAwesomeIcon className="question-logo1" icon={faQuestion} />
@@ -10,7 +10,7 @@ export default function Homepage() {
             <div id="content">
                 <h1>Quizzical</h1>
                 <p>Challenge Your Trivia Knowledge!</p>
-            <   button id="start">Start quiz</button>
+                <button id="start" onClick={props.startButton}>Start quiz</button>
             </div>
         </div>
     )
